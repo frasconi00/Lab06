@@ -10,10 +10,14 @@ public class TestMeteoDAO {
 		
 		MeteoDAO dao = new MeteoDAO();
 
-		List<Rilevamento> list = dao.getAllRilevamenti();
+		//List<Rilevamento> list = dao.getAllRilevamenti();
+		List<Rilevamento> lista = dao.getAllRilevamentiLocalitaMese(9, "Genova");
 
 		// STAMPA: localita, giorno, mese, anno, umidita (%)
-		for (Rilevamento r : list) {
+		//for (Rilevamento r : list) {
+			//System.out.format("%-10s %2td/%2$2tm/%2$4tY %3d%%\n", r.getLocalita(), r.getData(), r.getUmidita());
+		//}
+		for (Rilevamento r : lista) {
 			System.out.format("%-10s %2td/%2$2tm/%2$4tY %3d%%\n", r.getLocalita(), r.getData(), r.getUmidita());
 		}
 		
