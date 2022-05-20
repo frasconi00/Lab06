@@ -152,8 +152,9 @@ public class Model {
 				
 			}
 		}
-		
+	
 	}
+	
 	/*
 	public boolean controllaConsecutivi(List<Rilevamento> parziale) { 
 		
@@ -171,7 +172,9 @@ public class Model {
 			}
 		}
 		return false;
-	}*/
+	}
+	*/
+	
 	private boolean controllaConsecutivi(List<Rilevamento> parziale) { 
 		
 		//il tecnico ha cambiato citta-->controllare che abbia fatto almeno 3 gg consecutivi prima
